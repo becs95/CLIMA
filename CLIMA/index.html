@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>CONSULTA EL CLIMA PARA TUS SIGUIENTES VACACIONES</title> 
+
+</head>
+<body>
+    <h1>CONSULTA EL CLIMA PARA TUS SIGUIENTES VACACIONES</h1>
+    <div>
+        <label for="ciudad">Ciudad :</label>
+     </div>
+     <div>
+         <input type="text" id="ciudad">
+         <button onclick="consultarClima()">Consultar</button>
+     </div>
+     <div>
+        <label for="ciudades">Ciudades:</label>
+      </div>
+       <div>
+            <input type="text" id="ciudades" value="London, Paris, Berlin">
+            <button onclick="consultarClimas()">Consultar</button>
+        </div>
+       
+        <br><br>
+       
+        <div>
+            <button onclick="limpiarTabla()">Limpiar</button>
+       </div>
+      
+       <br><br>
+       
+       <div>
+        <table id="tabla-clima">
+          <thead>
+            <tr>
+              <th>Ciudad</th>
+              <th>Temperatura</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        </div>
+          <script src="script.js"></script>
+</body>
+</html>
